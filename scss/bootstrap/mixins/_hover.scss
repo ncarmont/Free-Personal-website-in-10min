@@ -1,0 +1,60 @@
+@mixin hover {
+  // TODO: re-enable along with mq4-hover-shim
+//  @if $enable-hover-media-query {
+//    // See Media Queries Level 4: https://drafts.csswg.org/mediaqueries/#hover
+//    // Currently shimmed by https://github.com/twbs/mq4-hover-shim
+//    @media (hover: hover) {
+//      &:hover { @me }
+//    }
+//  }
+//  @else {
+// scss-lint:disable Indentation
+    &:hover { @me }
+// scss-lint:enable Indentation
+//  }
+}
+
+
+@mixin hover-focus {
+  @if $enable-hover-media-query {
+    &:focus { @me }
+    @include hover { @me }
+  } @else {
+    &:focus,
+    &:hover {
+      @me
+    }
+  }
+}
+
+@mixin plain-hover-focus {
+  @if $enable-hover-media-query {
+    &,
+    &:focus {
+      @me
+    }
+    @include hover { @me }
+  } @else {
+    &,
+    &:focus,
+    &:hover {
+      @me
+    }
+  }
+}
+
+@mixin hover-focus-active {
+  @if $enable-hover-media-query {
+    &:focus,
+    &:active {
+      @me
+    }
+    @include hover { @me }
+  } @else {
+    &:focus,
+    &:active,
+    &:hover {
+      @me
+    }
+  }
+}

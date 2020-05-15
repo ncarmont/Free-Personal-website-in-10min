@@ -1,0 +1,536 @@
+<!DOCTYPE html>
+<html lang="zxx" class="no-js">
+
+<head>
+	<script>
+		// this is your personal content
+		let content = {
+			first_name: "Nicolas",
+			last_name: "Carmont",
+			position: "Software & Machine Learning Enthusiast",
+			email: "nickcarmont8@gmail.com",
+			allow_download_resume: false,
+			resume_path: "resume.pdf",
+			phone: "+44 7786107927",
+			main_pic: "img/header-img.png",
+			contact_pic: "img/about-img.jpg",
+			banner_emojis: "🤓🤖",
+			aboutMe: "I'm a hackathon fanatic (attended 10+), love football especially FC Barcelona. Half Spanish, half Australian. Grew up in the Netherlands. Spend Friday nights coding and on YouTube."
+		}
+
+		// these are the sections you want in your resume, add or delete any
+		let sections = [
+
+			// NEW SECTION
+			{
+				section_title: "Recent Projects",
+				emoji: "👨‍💻",
+				section_description: "👉Click 👈the cards below 👇to learn more",
+				cards: [
+					{
+						name: "NetZero",
+						image: "img/Color.png",
+						url: "https://netzero.world/",
+						description: "Track and offset your carbon footprint",
+						sub_description: "🏆Pioneer, Fidelity F4G, Clinton GIU",
+					},
+					{
+						name: "Mask Share UK",
+						image: "img/logo-copy.png",
+						url: "https://maskshare.co.uk/",
+						description: "Crowdsourcing website for PPE & face masks",
+						sub_description: "😷1800+ PPE donated, featured in press",
+					},
+					{
+						name: "FitPic",
+						image: "img/fitpic-logo-bg.png",
+						url: "https://fitpic.io/",
+						description: "Measuring Body Fat Percentage with neural networks",
+						sub_description: "🏆Cal Hacks Berkeley Fellowship",
+					},
+					{
+						name: "Silicon Valet",
+						image: "img/silicon-valet.png",
+						url: "https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/a14712b/submission/",
+						description: "Computer Vision Car Parking App",
+						sub_description: "🏆$1000 winner in largest student hackathon",
+					},
+					{
+						name: "Toxic Tweet",
+						image: "img/twitter.png",
+						url: "https://github.com/ncarmont/toxic-tweet/blob/master/README.MD",
+						description: "Hate speech detector for Twitter with logistic regression",
+						sub_description: "",
+					},
+					{
+						name: "Augmently",
+						image: "img/augmently-small.png",
+						url: "https://pypi.org/project/Augmently/",
+						description: "An Open Source image Data Augmentation library for DL",
+						sub_description: "",
+					},
+
+				]
+			},
+
+			// NEW SECTION
+			{
+				section_title: "Work",
+				emoji: "💼",
+				section_description: "Where I've been working recently",
+				cards: [
+					{
+						name: "NetZero",
+						image: "img/Color.png",
+						url: "https://tomorrowsci.com/",
+						description: "Co-founder",
+						sub_description: "Developing a banking app that tracks and offsets your carbon footprint",
+					},
+					{
+						name: "FitPic",
+						image: "img/fitpic-logo-bg.png",
+						url: "https://fitpic.io/",
+						description: "Software and Machine Learning Engineer",
+						sub_description: "Developing a Tensorflow model for visual body fat prediction",
+					},
+					{
+						name: "Nike",
+						image: "img/nike.jpg",
+						url: "",
+						description: "Software Engineering Intern",
+						sub_description: "Built Data Visualisation tool for A/B testing platform used on 180K+ users",
+					},
+					{
+						name: "Ingeniarius",
+						image: "img/INGENIARIUS.png",
+						url: "https://www.youtube.com/watch?v=T9cAixLaW-8",
+						description: "Self-driving RC Car Robotics Fellowship",
+						sub_description: "Worked with team of students to develop RC car for Robotcraft 2017",
+					},
+					{
+						name: "PwC",
+						image: "img/pwc.jpg",
+						url: "https://www.facebook.com/SEWF2019/videos/2085655315081033/",
+						description: "The Young Talents Program",
+						sub_description: "Week-long enterprise Program on sustainabible business practices",
+					},
+					{
+						name: "One Cherry",
+						image: "img/one-cherry.png",
+						url: "https://onecherry.co.uk",
+						description: "Software Engineer",
+						sub_description: "Helped develop online marketplace for charities",
+					},
+
+				]
+			},
+
+			// TO ADD NEW SECTIONS -> COPY PASTE THE ABOVE)
+
+			{
+				section_title: "Research",
+				emoji: "🔬",
+				section_description: "Some unpublished papers I've worked on",
+				cards: [
+
+					{
+						name: "Deep Learning",
+						image: "",
+						url: "",
+						description: "Generating realistic fake skin cancer images using GANs",
+						sub_description: "",
+					},
+					{
+						name: "Deep Learning",
+						image: "img/caffe-net.png",
+						url: "",
+						description: "Improving Facial Age Classification with our adapted Caffe Net CNN",
+						sub_description: "",
+					},
+					{
+						name: "Recommender Systems",
+						image: "img/Reddit.png",
+						url: "",
+						description: "Reddit post popularity prediction with sentiment analysis and collaborative filtering",
+						sub_description: "",
+					},
+
+
+
+				]
+			},
+		]
+
+	</script>
+
+
+	<style>
+		.p1-gradient-bg,
+		.primary-btn,
+		.primary-btn2:hover,
+		.default-header,
+		.dropdown-menu,
+		.banner-area,
+		.myself-wrap .desc .talk-btn,
+		.skillbar-bar,
+		.single-feature:hover,
+		.single-footer-widget .click-btn,
+
+		.box,
+		.generic-banner,
+		.p1-gradient-color,
+		.single-service a:hover,
+		.footer-social a:hover i,
+		.single-footer-widget .bb-btn {
+
+			/*VV  MAIN WEBSITE COLOR GRADIENTS HERE  -- FIND COOL ONES AT https://uigradients.com/ */
+			background: #62bdfc;
+			/* fallback for old browsers */
+			background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+			background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+			background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+
+			/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+		}
+
+		.p1-gradient-color,
+		.single-service a:hover,
+		.footer-social a:hover i,
+		.single-footer-widget .bb-btn {
+			/* VV MAIN WEBSITE COLOR GRADIENTS HERE  -- https://uigradients.com/ */
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+		}
+
+		h1,
+		h2,
+		h3,
+		h4,
+		h5,
+		h6,
+		body {
+
+			font-family: "Poppins", sans-serif !important;
+
+		}
+	</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<script>
+
+		const full_name = content.first_name + " " + content.last_name;
+		const initials = content.first_name.charAt(0) + (content.last_name ? content.last_name.charAt(0) : "");
+		document.title = full_name;
+	</script>
+
+
+	<link rel="icon" href="img/personal-logo.png">
+	<!-- Mobile Specific Meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><!-- Favicon-->
+	<link rel="shortcut icon" href="img/fav.png">
+	<!-- Author Meta -->
+	<meta name="author" content="Nick/colorlib">
+
+	<!-- Meta Description -->
+	<meta name="description" content="">
+
+	<!-- Meta Keyword -->
+	<meta name="keywords" content="">
+
+	<!-- meta character set -->
+	<meta charset="UTF-8">
+
+	<!-- Site Title -->
+	<title>My Website</title>
+
+	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
+	<!-- CSS=============================================-->
+	<link rel="stylesheet" href="css/linearicons.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+	<!-- start banner Area -->
+	<section class="banner-area" id="home">
+
+		<script>
+			let header_links = "";
+
+			for (let i = 0; i < sections.length; i++) {
+				header_links += `<li><a href="#project-${i}">${sections[i].section_title} </a></li> `
+			};
+
+
+
+
+
+			document.getElementById("home").innerHTML += `<!-- Start Header Area -->
+		<header class="default-header">
+			<nav class="navbar navbar-expand-lg  navbar-light">
+				<div class="container"><a class="navbar-brand" href="index.html">
+						<h1 class="text-white"><span>${initials}</span></h1>
+					</a><button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+						aria-expanded="false" aria-label="Toggle navigation"><span
+							class="text-white lnr lnr-menu"></span></button>
+					<div class="collapse navbar-collapse justify-content-end align-items-center"
+						id="navbarSupportedContent">
+						<ul class="navbar-nav">
+							<li><a href="#home">Home</a></li>
+						   ${header_links}
+							<li><a href="#resume">Resume</a></li>
+							<li><a href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</header>
+		<!-- End Header Area -->
+		<div class="container">
+			<div class="row justify-content-start align-items-center">
+				<div class="col-lg-6 col-md-12 no-padding banner-right"><img class="my-img img-fluid"
+						src=${content.main_pic} alt=""></div>
+				<div class="col-lg-6 col-md-12 banner-left">
+					<h1 class="text-white">Hi,
+						I’m <br/> <span> ${full_name}</span> <br/> ${content.position} <br/> ${content.banner_emojis} </h1>
+					<p class="mx-auto text-white mt-20 mb-40">Thanks for stopping by 😊 </p><a href="#project-0"
+						class="text-uppercase header-btn">Look at What I've been up to</span></a>
+				</div>
+			</div>
+		</div>
+		  
+		  
+		  
+		  
+		  `
+		</script>
+
+	</section>
+	<!-- End banner Area -->
+
+	<div id="content-sections"></div>
+
+	<script>
+
+		for (let i = 0; i < sections.length; i++) {
+
+			document.getElementById("content-sections").innerHTML += `
+
+
+			<section class="project-area section-gap " id="project-${i}" style="background:${i % 2 == sections.length % 2 ? '#fff' : 'f9f9ff'}">
+		<div class="container">
+			<div class="row d-flex justify-content-center">
+				<div class="menu-content pb-70 col-lg-12">
+					<div class="title text-center">
+						<h1 class="mb-10" style="margin-top:-40px;">${sections[i].emoji} ${sections[i].section_title}</h1>
+						<p>${sections[i].section_description} </p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-lg-12" style="margin-top:-40px;">
+			<div id="project-wrapper-${i}" class=" wrapper" style="background:transparent;">
+
+			</div>
+			</div>
+
+			</section>
+			`
+
+			sections[i].cards.forEach((proj) => {
+
+
+				if (proj.sub_description) {
+
+					document.getElementById(`project-wrapper-${i}`).innerHTML += `<a class="box project" href = ${proj.url ? proj.url : '#'}
+
+					${ proj.url ? 'target="_blank" ' : null} style = "${proj.image ? 'background-image: url(' + proj.image + ');' : ''} border: 1px solid #DCDCDC;
+					background - color: white; background-size: cover; background-repeat: no-repeat; background-position: center center; ">
+						<div class="box-text" > <h3 class="box-text-title" style="margin-bottom: 5%; font-size: 20px;">${
+						proj.name}
+							${proj.url ? '<img src="img/link-white.png" style="margin-left: 5px;width:20px; height:20px" />' : ''}
+							</h3> ${
+						proj.description
+						}
+
+					<div style="color:white; margin-top: 10%; font-size:${proj.sub_description.length > 40 ? '10px' : '14px'};">${
+						proj.sub_description
+						}
+
+					</div> </div > </a > `
+				}
+
+				else {
+
+					document.getElementById(`project-wrapper-${i}`).innerHTML += `<a class="box a"href = ${proj.url ? proj.url : '#'}
+
+					${ proj.url ? 'target="_blank" ' : null} style = "${proj.image ? 'background-image: url(' + proj.image + ');' : ''} border: 1px solid #DCDCDC;
+					background-size: cover; background-repeat: no-repeat; background-position: center center; ">
+						<div class="box-text" > <h3 class="box-text-title" style="font-size: 20px;">${
+						proj.name
+						}
+
+
+						${proj.url ? '<img src="img/link-white.png"style="margin-left: 5px;width:25px; height:25px" />' : ''}
+							</h3> ${
+						proj.description
+						}
+
+					</div >`;
+				}
+			}
+			);
+		}
+	</script>
+	<!-- End Project Area -->
+
+	<!-- Start Resume Area -->
+	<section class="qualification-area" id="resume" style="margin-bottom: 50px; margin-top: 50px;">
+		<script>
+
+			document.getElementById("resume").innerHTML += `
+
+						<div class="container" >
+							<div class="row d-flex justify-content-center">
+								<div class="menu-content pb-20 col-lg-12">
+									<div class="title text-center">
+										<h1 class="mb-10 margin-top:-80px;">💼 Resume</h1>
+										<p>Want to see my resume?</p>
+
+										${ content.allow_download_resume ?
+					`<div class="myself-wrap" style="background-color: transparent; margin-top:-40px;">
+											<div class="desc"><a class="mt-30 text-uppercase talk-btn" style="transform:scale(1.3)"
+												href="${content.resume_path}" target="_blank" download>
+												⬇️Download My Resume
+								</a></div>`
+					:
+
+					`<div class="myself-wrap" style="background-color: transparent; margin-top:-40px;">
+											<div class="desc"><a class="mt-30 text-uppercase talk-btn" style="transform:scale(1.3)"
+												href="mailto:${content.email}?subject=Hi ${content.first_name} - Send Me Your Resume :)">
+												📨 Get My Resume Emailed
+									To You</span>
+								</a></div>`
+				}
+									
+									</div>
+								</div>
+							</div>
+			</div >
+		</div >
+			
+			
+			`
+
+
+		</script>
+
+	</section>
+	<!-- End Resume Area -->
+	<!-- Start Contact Area -->
+	<section class="about-area section-gap" id="contact" style="margin-bottom:-100px;">
+
+		<script>
+
+			document.getElementById("contact").innerHTML += `
+						<div class="container" >
+							<div class="row d-flex justify-content-center">
+								<div class="menu-content pb-70 col-lg-12">
+									<div class="title text-center">
+										<h1 class="mb-10" style="margin-top:-40px;">📩
+							Contact</h1>
+										<p>Drop me a message</p>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-lg-12" style="width: 100%;text-align: center; margin-top:-90px;">
+									<div class="myself-wrap" style="transform:scale(0.9);"><img class="img-fluid"
+										src=${content.contact_pic} alt="">
+										<div class="desc" style="transform:scale(1.15);">
+											<h4>${full_name}</h4>
+											<p class="pb-10">${content.position}
+											</p>
+											<p><span class="lnr lnr-phone"></span>${content.phone}</p>
+											<p><span class="lnr lnr-envelope"></span>${content.email}
+											</p><a class="mt-30 text-uppercase talk-btn"
+												href="mailto:${content.email}?subject=Hey ${content.first_name} - I'd like to talk">Message
+								Me Now</span></a>
+						</div>
+									</div>
+								</div>
+							</div>
+		</div >	
+			`
+		</script>
+
+	</section>
+	<!-- End Contact Area -->
+	<!-- start footer Area -->
+	<footer id="footer" class="footer-area section-gap">
+
+
+		<script>
+
+			document.getElementById("footer").innerHTML += `
+
+						<div class="container" >
+							<div class="row">
+								<div class="col-lg-5  col-md-6 col-sm-6">
+									<div class="single-footer-widget">
+										<h6>About Me</h6>
+										<p> ${content.aboutMe}</p>
+										<p class="footer-text">Copyright &copy;${new Date().getFullYear()};
+							 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i>by <a
+												href="https://colorlib.com" target="_blank">Colorlib</a>
+										</p>
+									</div>
+								</div>
+							</div>
+		</div >
+`
+		</script>
+
+
+
+
+
+	</footer>
+	<!-- End footer Area -->
+	<script src="js/vendor/jquery-2.2.4.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+		integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+		crossorigin="anonymous"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/parallax.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/jquery.sticky.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

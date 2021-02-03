@@ -1,4 +1,4 @@
-# nick-personal-website (you can edit/delete this file after forking) 
+# nick-personal-website (edit/delete this after forking) 
 
 www.carmont.io
 

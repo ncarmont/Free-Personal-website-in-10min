@@ -3,38 +3,47 @@
 
 <head>
 	<script>
-		// this is your personal content
+		/* This is your personal content 😎 */
+		/* NOTE -- if any of these fields doesn't apply to you just leave empty quotes like this: "" (example: phone:"" )*/
+		/*👈 ALSO - anything within these slash(/) and asterix(*) is a comment, don't delete them  👉*/
+
 		let content = {
-			first_name: "Nicolas",
-			last_name: "Carmont",
-			position: "Software & Machine Learning Enthusiast",
-			email: "nickcarmont8@gmail.com",
-			allow_download_resume: false,
-			resume_path: "resume.pdf",
-			phone: "+44 7786107927",
-			main_pic: "img/header-img.png",
-			contact_pic: "img/about-img.jpg",
-			logo_pic: "img/personal-logo.png",
-			banner_emojis: "🤓🤖",
+			first_name: "Nicolas", /* <- write your first name here */
+			last_name: "Carmont", /* <- write your last name here */
+			position: "Software & Machine Learning Enthusiast", /* <- write your title here */
+			email: "nickcarmont8@gmail.com", /* <- write your email here */
+			allow_download_resume: false, /* <- write "false" if you want them to email you to ask for your resume or "true" if you want them to download your resume */
+			resume_path: "resume.pdf", /* if you wrote "true" above in "allow_download_resume", write here the filename of your resume */
+			phone: "+44 7786107927", /* <- write your phone number here */
+			main_pic: "img/header-img.png", /* <- write the filepath to your header image here (shown later in tutorial) */
+			contact_pic: "img/about-img.jpg", /* <- write the filepath to your contact section image here (shown later in tutorial) */
+			logo_pic: "img/personal-logo.png", /* <- write the filepath to your browser tab icon image here (shown later in tutorial) */
+			banner_emojis: "🤓🤖", /* write here some emojis that will go in the header */
+			/* write below a short description of you that will go in the bottom of the website */
 			aboutMe: "I'm a hackathon fanatic (attended 10+), love football especially FC Barcelona. Half Spanish, half Australian. Grew up in the Netherlands. Spend Friday nights coding and on YouTube."
 		}
 
-		// these are the sections you want in your resume, add or delete any
+
+
+		/* These are the sections you want in your resume 💼 (add or delete any) */
 		let sections = [
 
-			// NEW SECTION
+			/* NEW SECTION */
 			{
-				section_title: "Recent Projects",
-				emoji: "👨‍💻",
-				section_description: "👉Click 👈the cards below 👇to learn more",
+				section_title: "Recent Projects", /* <- write here the first section title of your website (example: "Work experience", "projects"...) */
+				emoji: "👨‍💻", /* <- write here an optional emoji (will go next to the section_title) */
+				section_description: "👉Click 👈the cards below 👇to learn more", /* <- write here an optional sub-description of the section (example: "here's some work I've done..") */
+				/* Below are the "cards" - these are the small square info cards for each section */
 				cards: [
 					{
-						name: "NetZero",
-						image: "img/Color.png",
-						url: "https://netzero.world/",
-						description: "Track and offset your carbon footprint",
-						sub_description: "🏆Pioneer, Fidelity F4G, Clinton GIU",
+						name: "NetZero", /* <- write here the name of the card (example: for a job it could be "Amazon")
+						image: "img/Color.png", /* <- write the filepath to your card image (covered later in tutorial) or leave as "" if you don't have one */
+						url: "https:/*netzero.world/", /* <- write the url you would like to link (or leave as "") */
+						description: "Track and offset your carbon footprint", /*<- write here a description of the card */
+						sub_description: "🏆Pioneer, Fidelity F4G, Clinton GIU", /*<- write here a sub-description if you like (else leave it as "") */
 					},
+
+					/* 👇👇👇 These are all the same - change them similar to the one above */
 					{
 						name: "Mask Share UK",
 						image: "img/logo-copy.png",
@@ -49,6 +58,8 @@
 						description: "Measuring Body Fat Percentage with neural networks",
 						sub_description: "🏆Cal Hacks Berkeley Fellowship",
 					},
+					/* 🔽 If you want to delete a card - just delete everything within curly braces (and the comma) so: "{...}," */
+					/*👇 For example delete the things between the pointers here 👇  (not including these comments) */
 					{
 						name: "Silicon Valet",
 						image: "img/silicon-valet.png",
@@ -56,10 +67,11 @@
 						description: "Computer Vision Car Parking App",
 						sub_description: "🏆$1000 winner in largest student hackathon",
 					},
+					/* 👆 and here 👆 (you can do the same for others or add new cards by copy-pasting this) */
 					{
 						name: "Toxic Tweet",
 						image: "img/twitter.png",
-						url: "https://github.com/ncarmont/toxic-tweet/blob/master/README.MD",
+						url: "https:*github.com/ncarmont/toxic-tweet/blob/master/README.MD",
 						description: "Hate speech detector for Twitter with logistic regression",
 						sub_description: "",
 					},
@@ -70,22 +82,35 @@
 						description: "An Open Source image Data Augmentation library for DL",
 						sub_description: "",
 					},
-
 				]
 			},
 
-			// NEW SECTION
+			/* NEW SECTION */
 			{
 				section_title: "Work",
 				emoji: "💼",
 				section_description: "Where I've been working recently",
 				cards: [
 					{
+						name: "Gardenia",
+						image: "img/gardenia.png",
+						url: "https://gardeniatech.com",
+						description: "Software Engineer",
+						sub_description: "Developing fintech software using AI to help companies optimise their finances",
+					},
+					{
+						name: "Amazon",
+						image: "img/amazon.png",
+						url: "https://amazon.com",
+						description: "Software Engineer",
+						sub_description: "Developed code on the Amazon website & apps for fashion products",
+					},
+					{
 						name: "NetZero",
 						image: "img/Color.png",
-						url: "https://tomorrowsci.com/",
+						url: "https://netzero.world/",
 						description: "Co-founder",
-						sub_description: "Developing a banking app that tracks and offsets your carbon footprint",
+						sub_description: "Built a banking app that tracks and offsets your carbon footprint",
 					},
 					{
 						name: "FitPic",
@@ -102,32 +127,19 @@
 						sub_description: "Built Data Visualisation tool for A/B testing platform used on 180K+ users",
 					},
 					{
-						name: "Ingeniarius",
-						image: "img/INGENIARIUS.png",
-						url: "https://www.youtube.com/watch?v=T9cAixLaW-8",
-						description: "Self-driving RC Car Robotics Fellowship",
-						sub_description: "Worked with team of students to develop RC car for Robotcraft 2017",
-					},
-					{
 						name: "PwC",
 						image: "img/pwc.jpg",
 						url: "https://www.facebook.com/SEWF2019/videos/2085655315081033/",
 						description: "The Young Talents Program",
 						sub_description: "Week-long enterprise Program on sustainabible business practices",
 					},
-					{
-						name: "One Cherry",
-						image: "img/one-cherry.png",
-						url: "https://onecherry.co.uk",
-						description: "Software Engineer",
-						sub_description: "Helped develop online marketplace for charities",
-					},
 
 				]
 			},
 
-			// TO ADD NEW SECTIONS -> COPY PASTE THE ABOVE)
-
+			/* ADD OR DELETE SECTIONS 🤘🤘🤘 - */
+			/* To add sections - just simply copy paste, but to To Remove sections- just simply delete */
+			/* what is in between these pointers 👇 (not including these comments) */
 			{
 				section_title: "Research",
 				emoji: "🔬",
@@ -136,7 +148,7 @@
 
 					{
 						name: "Deep Learning",
-						image: "",
+						image: "img/deeplearning.jpg",
 						url: "",
 						description: "Generating realistic fake skin cancer images using GANs",
 						sub_description: "",
@@ -155,16 +167,19 @@
 						description: "Reddit post popularity prediction with sentiment analysis and collaborative filtering",
 						sub_description: "",
 					},
-
-
-
 				]
 			},
+
+			/* what is in between these pointers 👆 to add/delete sections (not including these comments) */
+
 		]
 
 	</script>
 
 
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<style>
 		.p1-gradient-bg,
 		.primary-btn,
@@ -189,8 +204,8 @@
 			background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
 			background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
 			background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-			
 
+			/* 👆 here is where you paste your uigradient stuff */
 
 		}
 
@@ -238,10 +253,12 @@
 
 		const full_name = content.first_name + " " + content.last_name;
 		const initials = content.first_name.charAt(0) + (content.last_name ? content.last_name.charAt(0) : "");
+		const first_last_name = content.last_name.split(" ")[0];
 		document.title = full_name;
-		document.getElementById("logo").href = content.logo_pic;
+		document.getElementById("logo").href = `https://eu.ui-avatars.com/api/?name=${content.first_name}+${content.last_name}&background=62bdfc&color=fff&bold=true&rounded=true&font-size=0.55`
 
 	</script>
+
 
 
 	<!-- Mobile Specific Meta -->
@@ -274,7 +291,7 @@
 
 <body>
 	<!-- start banner Area -->
-	<section class="banner-area" id="home">
+	<section data-aos-easing="ease-in-sine" data-aos-duration="1000" data-aos="fade-down" class="banner-area" id="home">
 
 		<script>
 			let header_links = "";
@@ -283,48 +300,44 @@
 				header_links += `<li><a href="#project-${i}">${sections[i].section_title} </a></li> `
 			};
 
-
-
-
-
 			document.getElementById("home").innerHTML += `<!-- Start Header Area -->
 		<header class="default-header">
-			<nav class="navbar navbar-expand-lg  navbar-light">
-				<div class="container"><a class="navbar-brand" href="index.html">
+				<nav class="navbar navbar-expand-lg  navbar-light">
+					<div class="container"><a class="navbar-brand" href="index.html">
 						<h1 class="text-white"><span>${initials}</span></h1>
 					</a><button class="navbar-toggler" type="button" data-toggle="collapse"
 						data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
 						aria-expanded="false" aria-label="Toggle navigation"><span
 							class="text-white lnr lnr-menu"></span></button>
-					<div class="collapse navbar-collapse justify-content-end align-items-center"
-						id="navbarSupportedContent">
-						<ul class="navbar-nav">
-							<li><a href="#home">Home</a></li>
+						<div class="collapse navbar-collapse justify-content-end align-items-center"
+							id="navbarSupportedContent">
+							<ul class="navbar-nav">
+								<li><a href="#home">Home</a></li>
 						   ${header_links}
-							<li><a href="#resume">Resume</a></li>
-							<li><a href="#contact">Contact</a></li>
-						</ul>
+								<li><a href="#resume">Resume</a></li>
+								<li><a href="#contact">Contact</a></li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+			</header>
+			<!-- End Header Area -->
+		<div class="container">
+				<div class="row justify-content-start align-items-center">
+					<div class="col-lg-6 col-md-12 no-padding banner-right"><img class="my-img img-fluid"
+						src=${content.main_pic} alt=""></div>
+						<div class="col-lg-6 col-md-12 banner-left">
+							<h1 class="text-white">Hi,
+						I’m <br> <span> ${full_name}</span> <br> ${content.position} <br> ${content.banner_emojis} </h1>
+							<p class="mx-auto text-white mt-20 mb-40">Thanks for stopping by 😊 </p><a href="#project-0"
+								class="text-uppercase header-btn">Look at What I've been up to</span></a>
 					</div>
 				</div>
-			</nav>
-		</header>
-		<!-- End Header Area -->
-		<div class="container">
-			<div class="row justify-content-start align-items-center">
-				<div class="col-lg-6 col-md-12 no-padding banner-right"><img class="my-img img-fluid"
-						src=${content.main_pic} alt=""></div>
-				<div class="col-lg-6 col-md-12 banner-left">
-					<h1 class="text-white">Hi,
-						I’m <br/> <span> ${full_name}</span> <br/> ${content.position} <br/> ${content.banner_emojis} </h1>
-					<p class="mx-auto text-white mt-20 mb-40">Thanks for stopping by 😊 </p><a href="#project-0"
-						class="text-uppercase header-btn">Look at What I've been up to</span></a>
-				</div>
 			</div>
-		</div>
-		  
-		  
-		  
-		  
+
+
+
+
 		  `
 		</script>
 
@@ -340,7 +353,8 @@
 			document.getElementById("content-sections").innerHTML += `
 
 
-			<section class="project-area section-gap " id="project-${i}" style="background:${i % 2 == sections.length % 2 ? '#fff' : 'f9f9ff'}">
+			<section data-aos-easing="linear"
+    data-aos-duration="1000"data-aos="fade-up" class="project-area section-gap " id="project-${i}" style="background:${i % 2 == sections.length % 2 ? '#fff' : 'f9f9ff'}">
 		<div class="container">
 			<div class="row d-flex justify-content-center">
 				<div class="menu-content pb-70 col-lg-12">
@@ -367,17 +381,14 @@
 
 					document.getElementById(`project-wrapper-${i}`).innerHTML += `<a class="box project" href = ${proj.url ? proj.url : '#'}
 
-					${ proj.url ? 'target="_blank" ' : null} style = "${proj.image ? 'background-image: url(' + proj.image + ');' : ''} border: 1px solid #DCDCDC;
+					${proj.url ? 'target="_blank" ' : null} style = "${proj.image ? 'background-image: url(' + proj.image + ');' : ''} border: 1px solid #DCDCDC;
 					background - color: white; background-size: cover; background-repeat: no-repeat; background-position: center center; ">
-						<div class="box-text" > <h3 class="box-text-title" style="margin-bottom: 5%; font-size: 20px;">${
-						proj.name}
+						<div class="box-text" > <h3 class="box-text-title" style="margin-bottom: 5%; font-size: 20px;">${proj.name}
 							${proj.url ? '<img src="img/link-white.png" style="margin-left: 5px;width:20px; height:20px" />' : ''}
-							</h3> ${
-						proj.description
+							</h3> ${proj.description
 						}
 
-					<div style="color:white; margin-top: 10%; font-size:${proj.sub_description.length > 40 ? '10px' : '14px'};">${
-						proj.sub_description
+					<div style="color:white; margin-top: 10%; font-size:${proj.sub_description.length > 40 ? '10px' : '14px'};">${proj.sub_description
 						}
 
 					</div> </div > </a > `
@@ -387,16 +398,14 @@
 
 					document.getElementById(`project-wrapper-${i}`).innerHTML += `<a class="box a"href = ${proj.url ? proj.url : '#'}
 
-					${ proj.url ? 'target="_blank" ' : null} style = "${proj.image ? 'background-image: url(' + proj.image + ');' : ''} border: 1px solid #DCDCDC;
+					${proj.url ? 'target="_blank" ' : null} style = "${proj.image ? 'background-image: url(' + proj.image + ');' : ''} border: 1px solid #DCDCDC;
 					background-size: cover; background-repeat: no-repeat; background-position: center center; ">
-						<div class="box-text" > <h3 class="box-text-title" style="font-size: 20px;">${
-						proj.name
+						<div class="box-text" > <h3 class="box-text-title" style="font-size: 20px;">${proj.name
 						}
 
 
 						${proj.url ? '<img src="img/link-white.png"style="margin-left: 5px;width:25px; height:25px" />' : ''}
-							</h3> ${
-						proj.description
+							</h3> ${proj.description
 						}
 
 					</div >`;
@@ -408,19 +417,20 @@
 	<!-- End Project Area -->
 
 	<!-- Start Resume Area -->
-	<section class="qualification-area" id="resume" style="margin-bottom: 50px; margin-top: 50px;">
+	<section data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-up" class="qualification-area" id="resume"
+		style="margin-bottom: 50px; margin-top: 50px;">
 		<script>
 
 			document.getElementById("resume").innerHTML += `
 
 						<div class="container" >
-							<div class="row d-flex justify-content-center">
-								<div class="menu-content pb-20 col-lg-12">
-									<div class="title text-center">
-										<h1 class="mb-10 margin-top:-80px;">💼 Resume</h1>
-										<p>Want to see my resume?</p>
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-20 col-lg-12">
+							<div class="title text-center">
+								<h1 class="mb-10 margin-top:-80px;">💼 Resume</h1>
+								<p>Want to see my resume?</p>
 
-										${ content.allow_download_resume ?
+										${content.allow_download_resume ?
 					`<div class="myself-wrap" style="background-color: transparent; margin-top:-40px;">
 											<div class="desc"><a class="mt-30 text-uppercase talk-btn" style="transform:scale(1.3)"
 												href="${content.resume_path}" target="_blank" download>
@@ -435,14 +445,14 @@
 									To You</span>
 								</a></div>`
 				}
-									
-									</div>
-								</div>
+
 							</div>
-			</div >
+						</div>
+					</div>
+				</div >
 		</div >
-			
-			
+
+
 			`
 
 
@@ -451,12 +461,13 @@
 	</section>
 	<!-- End Resume Area -->
 	<!-- Start Contact Area -->
-	<section class="about-area section-gap" id="contact" style="margin-bottom:-100px;">
+	<section data-aos-easing="linear" data-aos-duration="1000" data-aos="fade-up" class="about-area section-gap"
+		id="contact" style="margin-bottom:-100px;">
 
 		<script>
 
 			document.getElementById("contact").innerHTML += `
-						<div class="container" >
+				<div class="container" >
 							<div class="row d-flex justify-content-center">
 								<div class="menu-content pb-70 col-lg-12">
 									<div class="title text-center">
@@ -483,7 +494,7 @@
 									</div>
 								</div>
 							</div>
-		</div >	
+		</div >
 			`
 		</script>
 
@@ -497,19 +508,19 @@
 
 			document.getElementById("footer").innerHTML += `
 
-						<div class="container" >
-							<div class="row">
-								<div class="col-lg-5  col-md-6 col-sm-6">
-									<div class="single-footer-widget">
-										<h6>About Me</h6>
-										<p> ${content.aboutMe}</p>
-										<p class="footer-text">Copyright &copy;${new Date().getFullYear()};
+				<div class="container" >
+					<div class="row">
+						<div class="col-lg-5  col-md-6 col-sm-6">
+							<div class="single-footer-widget">
+								<h6>About Me</h6>
+								<p> ${content.aboutMe}</p>
+								<p class="footer-text">Copyright &copy;${new Date().getFullYear()};
 							 All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i>by <a
-												href="https://colorlib.com" target="_blank">Colorlib</a>
-										</p>
-									</div>
-								</div>
+										href="https://colorlib.com" target="_blank">Colorlib</a>
+								</p>
 							</div>
+						</div>
+					</div>
 		</div >
 `
 		</script>
@@ -531,6 +542,9 @@
 	<script src="js/owl.carousel.min.js"></script>
 	<script src="js/jquery.sticky.js"></script>
 	<script src="js/main.js"></script>
+	<script>
+		AOS.init();
+	</script>
 </body>
 
 </html>

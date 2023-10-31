@@ -591,11 +591,11 @@ th {
 }
 
 .text-white {
-  color: #fff;
+  color: #000;
 }
 
 .text-black {
-  color: #000;
+  color: #gray;
 }
 
 .transition {

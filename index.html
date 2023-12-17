@@ -3,91 +3,51 @@
 
 <head>
 	<script>
-		/* This is your personal content 😎 */
-		/* NOTE -- if any of these fields doesn't apply to you just leave empty quotes like this: "" (example: phone:"" )*/
-		/*👈 ALSO - anything within these slash(/) and asterix(*) is a comment, don't delete them  👉*/
+
 
 		let content = {
-			first_name: "Nicolas", /* <- write your first name here */
-			last_name: "Carmont", /* <- write your last name here */
-			position: "Software & Machine Learning Enthusiast", /* <- write your title here */
-			email: "nickcarmont8@gmail.com", /* <- write your email here */
-			allow_download_resume: false, /* <- write "false" if you want them to email you to ask for your resume or "true" if you want them to download your resume */
+			first_name: "Lizette",
+			last_name: "Munoz",
+			position: "Web and Software developer student", 
+			email: "Lizettemu1@gmail.com", 
+			allow_download_resume: true, /* <- write "false" if you want them to email you to ask for your resume or "true" if you want them to download your resume */
 			resume_path: "resume.pdf", /* if you wrote "true" above in "allow_download_resume", write here the filename of your resume */
-			phone: "+44 7786107927", /* <- write your phone number here */
-			main_pic: "img/header-img.png", /* <- write the filepath to your header image here (shown later in tutorial) */
-			contact_pic: "img/about-img.jpg", /* <- write the filepath to your contact section image here (shown later in tutorial) */
+			phone: "16469180409", 
+			main_pic: "img/Lizette.png", /* <- write the filepath to your header image here (shown later in tutorial) */
+			contact_pic: "", /* <- write the filepath to your contact section image here (shown later in tutorial) */
 			logo_pic: "", /* <- This you don't need anymore! */
-			banner_emojis: "🤓🤖", /* write here some emojis that will go in the header */
+			banner_emojis: "", /* write here some emojis that will go in the header */
 			/* write below a short description of you that will go in the bottom of the website */
-			aboutMe: "I'm a hackathon fanatic (attended 10+), love football especially FC Barcelona. Half Spanish, half Australian. Grew up in the Netherlands. Spend Friday nights coding and on YouTube."
+			aboutMe: "I'm a fullstack developer student looking for an opportunity to switch careers and utilize the skills that I have acquired at Milwaukee Area Technical College and by also taking advantage of online resources. "
 		}
 
 
 
-		/* These are the sections you want in your resume 💼 (add or delete any) */
+		/*  sectionsin your resume */
 		let sections = [
 
 			/* NEW SECTION */
 			{
 				section_title: "Recent Projects", /* <- write here the first section title of your website (example: "Work experience", "projects"...) */
-				emoji: "👨‍💻", /* <- write here an optional emoji (will go next to the section_title) */
+				emoji: "", /* <- write here an optional emoji (will go next to the section_title) */
 				section_description: "👉Click 👈the cards below 👇to learn more", /* <- write here an optional sub-description of the section (example: "here's some work I've done..") */
 				/* Below are the "cards" - these are the small square info cards for each section */
 				cards: [
 					{
-						name: "NetZero", /* <- write here the name of the card (example: for a job it could be "Amazon") */
-						image: "img/Color.png", /* <- write the filepath to your card image (covered later in tutorial) or leave as "" if you don't have one */
+						name: "Vaycasa", /* <- write here the name of the card (example: for a job it could be "Amazon") */
+						image: "img/VaycasaLoogo.png", /* <- write the filepath to your card image (covered later in tutorial) or leave as "" if you don't have one */
 						url: "https://netzero.world/", /* <- write the url you would like to link (or leave as "") */
 						description: "Track and offset your carbon footprint", /*<- write here a description of the card */
 						sub_description: "🏆Pioneer, Fidelity F4G, Clinton GIU", /*<- write here a sub-description if you like (else leave it as "") */
 					},
 
-					/* 👇👇👇 These are all the same - change them similar to the one above */
-					{
-						name: "Mask Share UK",
-						image: "img/logo-copy.png",
-						url: "https://maskshare.co.uk/",
-						description: "Crowdsourcing website for PPE & face masks",
-						sub_description: "😷1800+ PPE donated, featured in press",
-					},
-					{
-						name: "FitPic",
-						image: "img/fitpic-logo-bg.png",
-						url: "https://fitpic.io/",
-						description: "Measuring Body Fat Percentage with neural networks",
-						sub_description: "🏆Cal Hacks Berkeley Fellowship",
-					},
-					/* 🔽 If you want to delete a card - just delete everything within curly braces (and the comma) so: "{...}," */
-					/*👇 For example delete the things between the pointers here 👇  (not including these comments) */
-					{
-						name: "Silicon Valet",
-						image: "img/silicon-valet.png",
-						url: "https://www.hackerearth.com/challenges/hackathon/cal-hacks-50/dashboard/a14712b/submission/",
-						description: "Computer Vision Car Parking App",
-						sub_description: "🏆$1000 winner in largest student hackathon",
-					},
-					/* 👆 and here 👆 (you can do the same for others or add new cards by copy-pasting this) */
-					{
-						name: "Toxic Tweet",
-						image: "img/twitter.png",
-						url: "https:*github.com/ncarmont/toxic-tweet/blob/master/README.MD",
-						description: "Hate speech detector for Twitter with logistic regression",
-						sub_description: "",
-					},
-					{
-						name: "Augmently",
-						image: "img/augmently-small.png",
-						url: "https://pypi.org/project/Augmently/",
-						description: "An Open Source image Data Augmentation library for DL",
-						sub_description: "",
-					},
+					
 				]
 			},
 
 			/* NEW SECTION */
 			{
-				section_title: "Work",
+				section_title: "Work Experience",
 				emoji: "💼",
 				section_description: "Where I've been working recently",
 				cards: [
@@ -98,75 +58,35 @@
 						description: "Software Engineer",
 						sub_description: "Developing fintech software using AI to help companies optimise their finances",
 					},
-					{
-						name: "Amazon",
-						image: "img/amazon.png",
-						url: "https://amazon.com",
-						description: "Software Engineer",
-						sub_description: "Developed code on the Amazon website & apps for fashion products",
-					},
-					{
-						name: "NetZero",
-						image: "img/Color.png",
-						url: "https://netzero.world/",
-						description: "Co-founder",
-						sub_description: "Built a banking app that tracks and offsets your carbon footprint",
-					},
-					{
-						name: "FitPic",
-						image: "img/fitpic-logo-bg.png",
-						url: "https://fitpic.io/",
-						description: "Software and Machine Learning Engineer",
-						sub_description: "Developing a Tensorflow model for visual body fat prediction",
-					},
-					{
-						name: "Nike",
-						image: "img/nike.jpg",
-						url: "",
-						description: "Software Engineering Intern",
-						sub_description: "Built Data Visualisation tool for A/B testing platform used on 180K+ users",
-					},
-					{
-						name: "PwC",
-						image: "img/pwc.jpg",
-						url: "https://www.facebook.com/SEWF2019/videos/2085655315081033/",
-						description: "The Young Talents Program",
-						sub_description: "Week-long enterprise Program on sustainabible business practices",
-					},
+			
 
 				]
 			},
 
-			/* ADD OR DELETE SECTIONS 🤘🤘🤘 - */
+			
 			/* To add sections - just simply copy paste, but to To Remove sections- just simply delete */
 			/* what is in between these pointers 👇 (not including these comments) */
 			{
-				section_title: "Research",
+				section_title: "Education",
 				emoji: "🔬",
 				section_description: "Some unpublished papers I've worked on",
 				cards: [
 
 					{
-						name: "Deep Learning",
-						image: "img/deeplearning.jpg",
+						name: "Milwaukee Area Technical College",
+						image: "",
 						url: "",
-						description: "Generating realistic fake skin cancer images using GANs",
+						description: "IT DEV-Web and Software Developer",
 						sub_description: "",
 					},
 					{
-						name: "Deep Learning",
-						image: "img/caffe-net.png",
+						name: "Generation USA",
+						image: "",
 						url: "",
-						description: "Improving Facial Age Classification with our adapted Caffe Net CNN",
+						description: "Fullstack Web Developer",
 						sub_description: "",
 					},
-					{
-						name: "Recommender Systems",
-						image: "img/Reddit.png",
-						url: "",
-						description: "Reddit post popularity prediction with sentiment analysis and collaborative filtering",
-						sub_description: "",
-					},
+				
 				]
 			},
 
@@ -200,10 +120,11 @@
 		.single-footer-widget .bb-btn {
 
 			/* MAIN STYLES!!! -  COLOR GRADIENTS HERE  -- FIND COOL ONES AT https://uigradients.com/ */
-			background: #62bdfc;
-			background-image: -moz-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-			background-image: -webkit-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
-			background-image: -ms-linear-gradient(0deg, #62bdfc 0%, #8490ff 100%);
+background: #ED4264;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #FFEDBC, #ED4264);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #FFEDBC, #ED4264); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
 
 			/* 👆 here is where you paste your uigradient stuff */
 
@@ -277,7 +198,7 @@
 	<meta charset="UTF-8">
 
 	<!-- Site Title -->
-	<title>My Website</title>
+	<title>My Portfolio</title>
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:100,200,400,300,500,600,700" rel="stylesheet">
 	<!-- CSS=============================================-->
@@ -329,6 +250,8 @@
 						<div class="col-lg-6 col-md-12 banner-left">
 							<h1 class="text-white">Hi,
 						I’m <br> <span> ${full_name}</span> <br> ${content.position} <br> ${content.banner_emojis} </h1>
+      <h6>About Me</h6>
+								<p> ${content.aboutMe}</p>
 							<p class="mx-auto text-white mt-20 mb-40">Thanks for stopping by 😊 </p><a href="#project-0"
 								class="text-uppercase header-btn">Look at What I've been up to</span></a>
 					</div>
